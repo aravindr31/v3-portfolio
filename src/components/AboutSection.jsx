@@ -4,6 +4,7 @@ import { Code2, Rocket, Sparkles } from "lucide-react";
 export default function AboutSection() {
   return (
     <section id="about" className="container py-24 sm:py-32">
+      <div className="relative overflow-hidden rounded-lg border bg-background/30 backdrop-blur-md p-6 shadow-lg">
       <div className="grid gap-8 lg:grid-cols-[1fr,1fr] lg:gap-16">
         <div className="space-y-8">
           <h2 className="text-4xl font-bold">About Me</h2>
@@ -49,6 +50,7 @@ export default function AboutSection() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

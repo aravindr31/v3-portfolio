@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 // Import icons from various libraries within react-icons
 import {
   SiPython, SiJavascript, SiGo, SiJenkins, SiJira, SiAnsible, SiTerraform, SiKubernetes, SiDocker,
-  SiGithub, SiGitlab, SiLinux, SiNodedotjs, SiReact, SiMongodb, SiMysql, SiApache,
+  SiGithub, SiGitlab, SiLinux, SiDynatrace, SiReact, SiMongodb, SiMysql, SiAkamai,
   SiGooglecloud, SiTekton, SiGrafana, SiElastic, SiRedhatopenshift, SiNextdotjs, SiRancher, SiStrapi,
   SiVercel, SiBitbucket, SiGithubactions, SiAdobe, SiIcinga
 } from 'react-icons/si';
@@ -42,7 +42,7 @@ export default function SkillsSection() {
     { icon: FaDatabase, name: 'SQLite' },
     { icon: SiMysql, name: 'MySQL' },
     { icon: SiMongodb, name: 'MongoDB' },
-    { icon: FaCircleNotch, name: 'Dynatrace' },
+    { icon: SiDynatrace, name: 'Dynatrace' },
     { icon: SiElastic, name: 'Kibana' },
     { icon: SiIcinga, name: 'Icinga' },
     { icon: SiGrafana, name: 'Grafana' },
@@ -52,7 +52,6 @@ export default function SkillsSection() {
     { icon: SiGithubactions, name: 'GitHub Actions' },
     { icon: SiGitlab, name: 'GitLab' },
     { icon: SiLinux, name: 'Linux' },
-    { icon: FaWindows, name: 'Windows' },
     { icon: SiAnsible, name: 'Ansible' },
     { icon: FaTools, name: 'Ansible Tower' },
     { icon: SiTerraform, name: 'Terraform' },
@@ -60,7 +59,7 @@ export default function SkillsSection() {
     { icon: SiKubernetes, name: 'Kubernetes' },
     { icon: SiRedhatopenshift, name: 'OpenShift' },
     { icon: SiRancher, name: 'Rancher' },
-    { icon: FaServer, name: 'Akamai' },
+    { icon: SiAkamai, name: 'Akamai' },
     { icon: VscAzure, name: 'Azure' },
     { icon: SiGooglecloud, name: 'GCP' },
     { icon: SiJira, name: 'JIRA' },

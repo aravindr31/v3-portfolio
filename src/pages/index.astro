@@ -5,6 +5,8 @@ import ProjectCard from "../components/ProjectCard.jsx";
 import AboutSection from "../components/AboutSection.jsx";
 import ContactSection from "../components/ContactSection.jsx";
 import SkillsSection from '../components/SkillsSection.jsx';
+import DotGrid from '../../@/components/DotGrid.jsx';
+import DecryptedText from '../../@/components/DecryptedText.jsx';
 ---
 
 <html lang="en">
@@ -22,7 +24,20 @@ import SkillsSection from '../components/SkillsSection.jsx';
     </script>
   </head>
   <body class="min-h-screen bg-background text-foreground font-sans antialiased">
-    <div class="relative flex min-h-screen flex-col">
+       <DotGrid client:load
+    dotSize={2}
+    gap={15}
+    baseColor="#5227FF"
+    activeColor="#5227FF"
+    proximity={120}
+    shockRadius={250}
+    shockStrength={5}
+    resistance={750}
+    returnDuration={1.5}
+    style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}
+  />
+    <div class="relative flex min-h-screen flex-col" >
+
       <Header client:load />
       
       <main class="flex-1">
@@ -31,8 +46,26 @@ import SkillsSection from '../components/SkillsSection.jsx';
           </div>
           <div class="relative z-10 flex flex-col items-center text-center space-y-8">
             <div class="space-y-4">
-				<h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-					Hello, I'm <span class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-600 bg-clip-text text-transparent">Aravind</span>
+              <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+              <DecryptedText client:load
+              text="Hello, I'm"
+              animateOn="view"
+              revealDirection="start"
+              sequential={true}
+              speed={60}
+            />
+					 <span class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-600 bg-clip-text text-transparent">
+            <DecryptedText client:load
+              text="Aravind"
+              animateOn='both'
+              revealDirection="end"
+              sequential={true}
+              speed={100}
+            />
+            </span>
+            </h1>
+
+				<h1 class="">
 				</h1>
 				<p class="mx-auto max-w-[700px] text-zinc-700 md:text-xl dark:text-zinc-300">
 				A Senior Site Reliability Engineer specializing in observability, automation, and full stack development.
@@ -90,6 +123,8 @@ import SkillsSection from '../components/SkillsSection.jsx';
           </p>
         </div>
       </footer>
+       <!-- </DotGrid> -->
     </div>
+
   </body>
 </html>
