@@ -21,5 +21,8 @@ jobs:
     - name: Install dependencies
       run: npm ci
 
+    - name: Set RESEND_API_KEY environment variable
+      run: echo "RESEND_API_KEY=$(echo ${{ secrets.RESEND_API_KEY }})" >> $GITHUB_ENV
+
     - name: Run Astro build
       run: npm run build
