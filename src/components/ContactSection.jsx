@@ -13,7 +13,7 @@ export default function ContactSection() {
 
   }
   return (
-    <section id="contact" className="container py-24 sm:py-32">
+    <section id="contact" className="container relative overflow-hidden rounded-lg border bg-background/10 backdrop-blur-md p-6 shadow-lg py-24 sm:py-32">
       <div className="grid gap-16 lg:grid-cols-2">
         <div className="space-y-8">
           <div className="space-y-6">
