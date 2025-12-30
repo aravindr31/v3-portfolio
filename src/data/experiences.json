@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Senior Site Reliability Engineer",
+    "company": "Ford Motor Company",
+    "companyUrl": "https://www.ford.com",
+    "period": "September 2024 - Present",
+    "location": "India",
+    "highlights": [
+      "Currently piloting OpenTelemetry (OTel) for enhanced logging and distributed observability across microservices",
+      "Implementing Observability as Code (OaC) for Dynatrace SaaS platform using Terraform, standardizing monitoring deployment across teams",
+      "Own full reliability lifecycle for 4 Vehicle Commerce products as Product SRE, driving incident triage and APM-based debugging",
+      "Engineered AI assistant integrating ServiceNow APIs, Akamai Fast Purge API, and GCP logs, reducing MTTR by 30%",
+      "Spearheaded SLO and Error Budget adoption across all products, establishing data-driven framework for system reliability"
+    ],
+    "technologies": ["GCP", "Akamai", "Ansible", "Dynatrace", "Docker", "Tekton", "Jenkins", "Next.js", "GitHub", "OpenShift", "Terraform", "SLOs", "Grafana", "Kibana", "OpenTelemetry"]
+  },
+  {
+    "title": "Site Reliability Engineer",
+    "company": "Cognizant",
+    "companyUrl": "https://www.cognizant.com/us/en",
+    "period": "January 2020 - September 2024",
+    "location": "India",
+    "highlights": [
+      "Designed and developed solutions to improve application performance with industry standard practices",
+      "Orchestrated deployment of robust monitoring, observability, and alerting solutions using Dynatrace, Kibana & ServiceNow",
+      "Configured and managed Akamai caching rules to improve site performance",
+      "Developed end-to-end automation for Application Load Balancing and Edge Redirect Cloudlets using custom Ansible modules",
+      "Built comprehensive CICD pipelines with Sonarqube, OWASP security checks, and ServiceNow integration"
+    ],
+    "technologies": ["Azure", "Akamai", "Ansible", "Dynatrace", "Docker", "Jenkins", "Kubernetes", "Terraform", "ServiceNow"]
+  },
+  {
+    "title": "Backend Developer",
+    "company": "Freelance",
+    "companyUrl": "",
+    "period": "June 2019 - December 2019",
+    "location": "Remote",
+    "highlights": [
+      "Developed custom ecommerce websites for local businesses using Node.js, React, and MongoDB",
+      "Integrated backend with headless CMS engine - Strapi for flexible content management",
+      "Built full-scale chat application using Firebase and Next.js",
+      "Integrated and automated code analysis into developer workflow and pipeline",
+      "Deployed scalable microservices architecture with automated CI/CD pipelines"
+    ],
+    "technologies": ["Node.js", "Express.js", "MongoDB", "REST APIs", "JWT"]
+  }
+]

@@ -57,4 +57,53 @@
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
   }
+  
+  /* Mobile optimizations */
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+  }
+  
+  body {
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Desktop: prevent body scroll, allow only right panel to scroll */
+  @media (min-width: 1024px) {
+    html, body {
+      overflow: hidden;
+      height: 100vh;
+    }
+  }
+  
+  /* Mobile: allow normal scrolling */
+  @media (max-width: 1023px) {
+    body {
+      overflow-x: hidden;
+    }
+  }
+  
+  /* Prevent overflow on all containers */
+  * {
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* Improve touch targets on mobile */
+  @media (max-width: 768px) {
+    button, a {
+      min-height: 44px;
+      min-width: 44px;
+    }
+    
+    /* Ensure proper spacing on mobile */
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
 }
