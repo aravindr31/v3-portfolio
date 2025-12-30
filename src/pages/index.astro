@@ -5,8 +5,10 @@ import ProjectCard from "../components/ProjectCard.jsx";
 import AboutSection from "../components/AboutSection.jsx";
 import ContactSection from "../components/ContactSection.jsx";
 import SkillsSection from '../components/SkillsSection.jsx';
-import DecryptedText from '../../@/components/DecryptedText.jsx';
-import LiquidEther from '../../@/components/LiquidEther';
+import DecryptedText from '../components/ui/DecryptedText.jsx';
+import LiquidEther from '../components/ui/LiquidEther.jsx';
+import projectsData from '../data/projects.json';
+import ExperienceSection from '../components/ExperienceSection.jsx';
 ---
 
 <html lang="en">
@@ -15,8 +17,8 @@ import LiquidEther from '../../@/components/LiquidEther';
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Aravind | Full Stack Developer</title>
-    <meta name="description" content="Aravind R - A full stack developer creating performant and beautiful web experiences" />
+    <title>Aravind R</title>
+    <meta name="description" content="Aravind R - Senior Site Reliability Engineer specializing in observability, automation, and enterprise-scale infrastructure" />
     <script is:inline>
       const isDark = localStorage.getItem('darkMode') === 'true' || 
                     (!('darkMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
@@ -24,116 +26,229 @@ import LiquidEther from '../../@/components/LiquidEther';
     </script>
   </head>
   <body class="min-h-screen bg-background text-foreground font-sans antialiased">
-    <div class="relative flex min-h-screen flex-col items-center text-center space-y-8">
-    
-    <LiquidEther client:load
-      colors={[ '#5227FF', '#FF9FFC', '#B19EEF' ]}
-      mouseForce={20}
-      cursorSize={100}
-      isViscous={false}
-      viscous={30}
-      iterationsViscous={32}
-      iterationsPoisson={32}
-      resolution={0.5}
-      isBounce={false}
-      autoDemo={true}
-      autoSpeed={0.5}
-      autoIntensity={2.2}
-      takeoverDuration={0.25}
-      autoResumeDelay={3000}
-      autoRampDuration={0.6}
-      style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh'}}
-    />
-      <!-- <div class="relative flex min-h-screen flex-col" > -->
+    <div style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: -1;">
+      <LiquidEther client:load
+        colors={[ '#60A5FA', '#34D399', '#7DD3FC' ]}
+        mouseForce={15}
+        cursorSize={100}
+        isViscous={false}
+        viscous={30}
+        iterationsViscous={32}
+        iterationsPoisson={32}
+        resolution={0.5}
+        isBounce={false}
+        autoDemo={true}
+        autoSpeed={0.5}
+        autoIntensity={2}
+        takeoverDuration={0.25}
+        autoResumeDelay={3000}
+        autoRampDuration={0.6}
+        style={{ width: '100%', height: '100%', opacity: 0.35, pointerEvents: 'auto'}}
+      />
+    </div>
 
-      <Header client:load />
-      
-      <main class="flex-1">
-        <section class="container py-24 sm:py-32 relative overflow-hidden">
-          <div class="absolute inset-0 w-full h-full z-0">
-          </div>
-          <div class="relative z-10 flex flex-col items-center text-center space-y-8">
-            <div class="space-y-4">
-              <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-              <DecryptedText client:load
-              text="Hello, I'm"
+    <div class="lg:flex lg:h-screen">
+      <!-- Left Sidebar - Fixed on desktop -->
+      <div class="lg:w-1/2 lg:h-screen lg:flex lg:flex-col lg:justify-between lg:py-24 lg:items-center px-6 sm:px-12 py-12">
+        <Header client:load />
+        
+        <div class="space-y-4 sm:space-y-6 max-w-lg">
+          <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl lg:text-6xl leading-tight">
+            <DecryptedText client:load
+              text="Aravind R"
               animateOn="view"
               revealDirection="start"
               sequential={true}
               speed={60}
             />
-					 <span class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-600 bg-clip-text text-transparent">
-            <DecryptedText client:load
-              text="Aravind"
-              animateOn='both'
-              revealDirection="end"
-              sequential={true}
-              speed={100}
-            />
-            </span>
-            </h1>
+          </h1>
 
-				<h1 class="">
-				</h1>
-				<p class="mx-auto max-w-[700px] text-zinc-700 md:text-xl dark:text-zinc-300">
-				A Senior Site Reliability Engineer specializing in observability, automation, and full stack development.
-				</p>
-            </div>
-          </div>
-        </section>
+          <h2 class="text-xl sm:text-2xl lg:text-2xl font-semibold text-zinc-600 dark:text-zinc-300">
+            Site Reliability Engineer
+          </h2>
+          
+          <p class="text-base sm:text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-md">
+            Specializing in observability, automation, and building resilient enterprise-scale systems at Ford Motor Company.
+          </p>
 
-        <section id="projects" class="container py-24 sm:py-32">
-          <div class="space-y-8">
-            <div class="space-y-4">
-              <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">Featured Projects</h2>
-              <p class="text-muted-foreground md:text-lg">Selected enterprise and personal projects showcasing my expertise in SRE, automation, and full-stack development.</p>
-            </div>
-            <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
-              <ProjectCard 
-                client:visible
-                title="SRE AI Assistant"
-                description="Engineered an AI assistant integrating ServiceNow APIs, Akamai Fast Purge API, and GCP logs with Ford's native LLM, reducing incident resolution time by 30%. Built with Python and MS Copilot Studio."
-                githubUrl="https://github.com/aravindr31"
-              />
-              <ProjectCard 
-                client:visible
-                title="Akamai Infrastructure Automation"
-                description="Developed end-to-end automation for Application Load Balancing and Edge Redirect Cloudlets using custom Ansible modules. Integrated with Ansible Tower for user-friendly management."
-                githubUrl="https://github.com/aravindr31"
-              />
-              <ProjectCard 
-                client:visible
-                title="SRE CICD Pipeline"
-                description="Built comprehensive Jenkins & Tekton pipelines with Sonarqube, OWASP security checks, automated ServiceNow change management, and Kubernetes deployments."
-                githubUrl="https://github.com/aravindr31"
-              />
-              <ProjectCard 
-                client:visible
-                title="Unified SLO Dashboard"
-                description="Created a Next.js dashboard for real-time monitoring of SLOs and error budgets across core products, improving system reliability tracking and decision-making."
-                githubUrl="https://github.com/aravindr31"
-              />
-            </div>
+          <!-- Navigation - Desktop only with scroll spy -->
+          <nav class="hidden lg:block pt-8" id="main-nav">
+            <ul class="space-y-4">
+              <li>
+                <a href="#about" class="nav-link group flex items-center gap-3 text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-foreground transition-colors" data-section="about">
+                  <span class="nav-line h-px w-8 bg-zinc-600 dark:bg-zinc-400 group-hover:w-16 group-hover:bg-foreground transition-all"></span>
+                  ABOUT
+                </a>
+              </li>
+              <li>
+                <a href="#experience" class="nav-link group flex items-center gap-3 text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-foreground transition-colors" data-section="experience">
+                  <span class="nav-line h-px w-8 bg-zinc-600 dark:bg-zinc-400 group-hover:w-16 group-hover:bg-foreground transition-all"></span>
+                  EXPERIENCE
+                </a>
+              </li>
+              <li>
+                <a href="#projects" class="nav-link group flex items-center gap-3 text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-foreground transition-colors" data-section="projects">
+                  <span class="nav-line h-px w-8 bg-zinc-600 dark:bg-zinc-400 group-hover:w-16 group-hover:bg-foreground transition-all"></span>
+                  PROJECTS
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Social Links -->
+          <div class="hidden lg:flex gap-6 pt-8">
+            <a href="mailto:aravindr597@gmail.com" class="text-zinc-600 dark:text-zinc-400 hover:text-foreground transition-colors" aria-label="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+            </a>
+            <a href="https://github.com/aravindr31" target="_blank" rel="noopener noreferrer" class="text-zinc-600 dark:text-zinc-400 hover:text-foreground transition-colors" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/aravind-r-954451118/" target="_blank" rel="noopener noreferrer" class="text-zinc-600 dark:text-zinc-400 hover:text-foreground transition-colors" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="text-zinc-600 dark:text-zinc-400 hover:text-foreground transition-colors" aria-label="Letterboxd">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="m16 10-4 4-4-4"></path></svg>
+            </a>
           </div>
-        </section>
-        <div>
-        <AboutSection client:visible />
-        <SkillsSection client:visible />
-        <ContactSection client:visible />
         </div>
-      </main>
-      
-      <footer class="py-6 border-t mx-auto w-full">
-        <div class="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
-          <p class="text-center text-sm leading-loose text-muted-foreground md:text-left">
+      </div>
+
+      <!-- Right Content - Scrollable -->
+      <main class="lg:w-1/2 lg:h-screen lg:overflow-y-auto lg:py-24 px-6 sm:px-12 lg:px-12" id="main-content" style="scrollbar-gutter: stable;">
+        
+        <section id="about" class="mb-16 sm:mb-24 scroll-mt-16 lg:mb-36 lg:scroll-mt-24">
+          <AboutSection client:visible />
+        </section>
+
+        <section id="experience" class="mb-16 sm:mb-24 scroll-mt-16 lg:mb-36 lg:scroll-mt-24">
+          <ExperienceSection client:visible />
+        </section>
+
+        <section id="projects" class="mb-16 sm:mb-24 scroll-mt-16 lg:mb-36 lg:scroll-mt-24">
+          <div class="space-y-6 sm:space-y-8 w-full">
+            <div class="space-y-3 sm:space-y-4">
+              <h2 class="text-2xl sm:text-3xl font-bold tracking-tighter">Featured Projects</h2>
+              <p class="text-muted-foreground text-sm sm:text-base">Selected enterprise and personal projects showcasing my expertise in SRE, automation, and full-stack development.</p>
+            </div>
+            <div class="grid grid-cols-1 gap-6 sm:gap-8 w-full">
+              {projectsData.map((project) => (
+                <ProjectCard 
+                  client:visible
+                  title={project.title}
+                  description={project.description}
+                  githubUrl={project.githubUrl}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+
+
+        <section id="skills" class="mb-16 sm:mb-24 scroll-mt-16 lg:mb-36 lg:scroll-mt-24">
+          <SkillsSection client:visible />
+        </section>
+
+        <section id="contact" class="mb-16 sm:mb-24 scroll-mt-16 lg:mb-36 lg:scroll-mt-24">
+          <ContactSection client:visible />
+        </section>
+
+        <footer class="py-8 mt-16">
+          <p class="text-sm leading-loose text-muted-foreground">
             Built with <a href="https://astro.build" target="_blank" rel="noopener noreferrer" class="font-medium underline underline-offset-4">Astro</a> and 
             <a href="https://ui.shadcn.com" target="_blank" rel="noopener noreferrer" class="font-medium underline underline-offset-4">shadcn/ui</a>. 
             {new Date().getFullYear()} © Aravind.
           </p>
-        </div>
-      </footer>
+        </footer>
+      </main>
     </div>
-    <!-- </div> -->
 
+    <script is:inline>
+      // Wait for DOM to be fully loaded
+      document.addEventListener('DOMContentLoaded', function() {
+        // Scroll spy and scroll forwarding
+        if (window.innerWidth >= 1024) {
+          const mainContent = document.getElementById('main-content');
+          const sections = document.querySelectorAll('section[id]');
+          const navLinks = document.querySelectorAll('.nav-link');
+          
+          // Forward wheel events from anywhere to the scrollable content
+          document.addEventListener('wheel', (e) => {
+            if (mainContent && window.innerWidth >= 1024) {
+              e.preventDefault();
+              mainContent.scrollTop += e.deltaY;
+            }
+          }, { passive: false });
+          
+          // Allow clicks to work by not preventing their default behavior
+          document.addEventListener('click', (e) => {
+            // Let all clicks through - don't prevent default
+          }, { passive: true });
+
+          // Scroll spy - update active nav on scroll
+          function updateActiveNav() {
+            let currentSection = '';
+            const scrollPos = mainContent.scrollTop + 200;
+
+            sections.forEach(section => {
+              const sectionTop = section.offsetTop;
+              const sectionHeight = section.offsetHeight;
+              
+              if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                currentSection = section.getAttribute('id');
+              }
+            });
+
+            navLinks.forEach(link => {
+              const linkSection = link.getAttribute('data-section');
+              const line = link.querySelector('.nav-line');
+              
+              if (linkSection === currentSection) {
+                link.classList.add('text-teal-500');
+                link.classList.remove('text-zinc-600', 'dark:text-zinc-400');
+                if (line) {
+                  line.classList.add('w-16', 'bg-teal-500');
+                  line.classList.remove('w-8', 'bg-zinc-600', 'dark:bg-zinc-400');
+                }
+              } else {
+                link.classList.remove('text-teal-500');
+                link.classList.add('text-zinc-600', 'dark:text-zinc-400');
+                if (line) {
+                  line.classList.remove('w-16', 'bg-teal-500');
+                  line.classList.add('w-8', 'bg-zinc-600', 'dark:bg-zinc-400');
+                }
+              }
+            });
+          }
+
+          // Listen to scroll on the main content
+          if (mainContent) {
+            mainContent.addEventListener('scroll', updateActiveNav);
+            // Initial check
+            updateActiveNav();
+          }
+
+          // Smooth scroll when clicking nav links (only internal navigation)
+          navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+              const href = link.getAttribute('href');
+              // Only handle internal links that start with #
+              if (href && href.startsWith('#')) {
+                e.preventDefault();
+                const targetId = href.substring(1);
+                const targetSection = document.getElementById(targetId);
+                
+                if (targetSection && mainContent) {
+                  const offsetTop = targetSection.offsetTop - 100;
+                  mainContent.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                  });
+                }
+              }
+            });
+          });
+        }
+      });
+    </script>
   </body>
 </html>

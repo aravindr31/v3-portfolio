@@ -1,0 +1,22 @@
+[
+  {
+    "title": "SRE AI Assistant",
+    "description": "Engineered an AI assistant integrating ServiceNow APIs, Akamai Fast Purge API, and GCP logs with Ford's native LLM, reducing incident resolution time by 30%. Built with Python and MS Copilot Studio.",
+    "githubUrl": ""
+  },
+  {
+    "title": "Akamai Infrastructure Automation",
+    "description": "Developed end-to-end automation for Application Load Balancing and Edge Redirect Cloudlets using custom Ansible modules. Integrated with Ansible Tower for user-friendly management.",
+    "githubUrl": ""
+  },
+  {
+    "title": "SRE CICD Pipeline",
+    "description": "Built comprehensive Jenkins & Tekton pipelines with Sonarqube, OWASP security checks, automated ServiceNow change management, and Kubernetes deployments.",
+    "githubUrl": ""
+  },
+  {
+    "title": "Personal Portfolio Website",
+    "description": "Modern, minimalist portfolio built with Astro and React featuring split-screen design, scroll spy navigation, interactive liquid background animations, and smooth section transitions. Inspired by Brittany Chiang's design philosophy.",
+    "githubUrl": "https://github.com/aravindr31/v3-portfolio"
+  }
+]
