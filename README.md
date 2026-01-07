@@ -144,8 +144,6 @@ Edit `src/data/skills.json`:
 ["Python", "JavaScript", "Docker", "Kubernetes"]
 ```
 
-📖 **Full documentation:** See [DATA_GUIDE.md](./DATA_GUIDE.md)
-
 ---
 
 ## 🧞 Commands
@@ -227,32 +225,6 @@ MIT License - feel free to use this portfolio as inspiration for your own!
 - **GitHub:** [@aravindr31](https://github.com/aravindr31)
 - **LinkedIn:** [Aravind Ramesh](https://www.linkedin.com/in/aravind-r-954451118/)
 - **Email:** aravindr597@gmail.com
-
----
-
-## 💡 Key Features Breakdown
-
-### Split-Screen Architecture
-- Left sidebar: Fixed positioning, vertically centered content
-- Right panel: Scrollable with custom scroll forwarding
-- Responsive: Stacks vertically on mobile
-
-### Scroll Management
-- Custom wheel event handling
-- Scroll spy with active section tracking
-- Smooth scroll navigation with offset
-
-### Performance
-- Static site generation (SSG)
-- Minimal JavaScript bundle
-- Lazy loading components with `client:visible`
-- Optimized for Core Web Vitals
-
-### Accessibility
-- Semantic HTML structure
-- ARIA labels on interactive elements
-- Keyboard navigation support
-- Screen reader friendly
 
 ---
 
