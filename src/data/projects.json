@@ -18,5 +18,11 @@
     "title": "Personal Portfolio Website",
     "description": "Modern, minimalist portfolio built with Astro and React featuring split-screen design, scroll spy navigation, interactive liquid background animations, and smooth section transitions. Inspired by Brittany Chiang's design philosophy.",
     "githubUrl": "https://github.com/aravindr31/v3-portfolio"
-  }
+  },
+  {
+  "title": "GitPulse - GitHub Stats Visualizer",
+  "description": "Full-stack GitHub analytics platform with embeddable SVG badges for profile READMEs. Built with React, TypeScript, Vite and deployed on Cloudflare Workers/Pages. Features achievement badges, developer ranking algorithm, contribution streaks, and CI/CD pipeline with GitHub Actions including automated testing, linting, and multi-environment deployments.",
+  "githubUrl": "https://github.com/aravindr31/git-pulse",
+  "liveUrl": "https://git-pulse.pages.dev"
+}
 ]
