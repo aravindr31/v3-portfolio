@@ -35,24 +35,18 @@
     "highlight": false
   },
   {
-    "title": "Unified Dashboarding",
-    "slug": "unified-dashboarding",
-    "description": "Developed a custom Next.js dashboard to provide development teams with a real-time, holistic view of application health and error budget consumption.",
-    "githubUrl": "",
+    "title": "Personal Portfolio Website",
+    "slug": "personal-portfolio-website",
+    "description": "Modern, minimalist portfolio built with Astro and React featuring split-screen design, scroll spy navigation, interactive liquid background animations, and smooth section transitions. Inspired by Brittany Chiang's design philosophy.",
+    "githubUrl": "https://github.com/aravindr31/v3-portfolio",
     "highlight": false
   },
   {
-    "title": "Custom Ecommerce websites",
-    "slug": "custom-ecommerce-websites",
-    "description": "Developed custom Ecommerce websites for local businesses using Node JS, React, and MongoDB.",
-    "githubUrl": "",
-    "highlight": false
-  },
-  {
-    "title": "Chat application",
-    "slug": "chat-application",
-    "description": "Developed a full-scale chat application using Firebase and Next JS.",
-    "githubUrl": "",
-    "highlight": false
-  }
+  "title": "GitPulse - GitHub Stats Visualizer",
+  "slug": "gitpulse",
+  "description": "Full-stack GitHub analytics platform with embeddable SVG badges for profile READMEs. Built with React, TypeScript, Vite and deployed on Cloudflare Workers/Pages. Features achievement badges, developer ranking algorithm, contribution streaks, and CI/CD pipeline with GitHub Actions including automated testing, linting, and multi-environment deployments.",
+  "githubUrl": "https://github.com/aravindr31/git-pulse",
+  "liveUrl": "https://git-pulse.pages.dev",
+  "highlight": false
+}
 ]

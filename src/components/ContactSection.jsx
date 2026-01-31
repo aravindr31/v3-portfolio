@@ -13,7 +13,7 @@ export default function ContactSection() {
         <div className="mt-4">
             <a href="/resume.md" target="_blank" rel="noopener noreferrer">
                 <Button variant="transparent" className="gap-2 hover:text-teal-500 transition-all duration-300">
-                  View Resume
+                  Checkout My Full Resume
                   </Button>
             </a>
         </div>
