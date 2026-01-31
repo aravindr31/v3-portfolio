@@ -11,9 +11,9 @@ export default function ContactSection() {
           Looking to improve your system's reliability or need expertise in observability solutions? I'm open to discussing interesting opportunities and collaborations in the SRE space.
         </p>
         <div className="mt-4">
-            <a href="https://drive.google.com/file/d/18acVg2erIgdWAWTlRox0k2z6iTohyr2m/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <a href="/resume.md" target="_blank" rel="noopener noreferrer">
                 <Button variant="transparent" className="gap-2 hover:text-teal-500 transition-all duration-300">
-                  View Full Resume
+                  View Resume
                   </Button>
             </a>
         </div>
