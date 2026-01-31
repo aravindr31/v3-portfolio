@@ -221,7 +221,7 @@ MIT License - feel free to use this portfolio as inspiration for your own!
 
 ## 🤝 Connect
 
-- **Portfolio:** [Your URL]
+- **Portfolio:** [Link](https://www.aravindr.in/)
 - **GitHub:** [@aravindr31](https://github.com/aravindr31)
 - **LinkedIn:** [Aravind Ramesh](https://www.linkedin.com/in/aravind-r-954451118/)
 - **Email:** aravindr597@gmail.com
