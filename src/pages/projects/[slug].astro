@@ -1,0 +1,128 @@
+---
+import projects from '../../data/projects.json';
+import { Button } from '../../components/ui/button';
+import { ExternalLink, Github } from 'lucide-react';
+import LiquidEther from '../../components/ui/LiquidEther.jsx';
+import '../../styles.css';
+
+export async function getStaticPaths() {
+  return projects.map(project => ({
+    params: { slug: project.slug },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+---
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{project.title}</title>
+    <meta name="description" content={project.description} />
+    <script is:inline>
+      const isDark = localStorage.getItem('darkMode') === 'true' || 
+                    (!('darkMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.classList.toggle('dark', isDark);
+    </script>
+    <style>
+        body {
+            min-height: 100vh;
+            background-color: hsl(var(--background));
+            color: hsl(var(--foreground));
+            font-family: sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .prose {
+            color: hsl(var(--foreground));
+        }
+        .prose h1 {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            margin-bottom: 1rem;
+        }
+        .prose p {
+            line-height: 1.75;
+            color: hsl(var(--muted-foreground));
+        }
+        .prose a {
+            color: hsl(var(--primary));
+            text-decoration: none;
+        }
+        .prose a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: hsl(var(--muted-foreground));
+            text-decoration: none;
+        }
+        .back-link:hover {
+            color: hsl(var(--foreground));
+        }
+        .links {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-background text-foreground font-sans antialiased">
+    <div style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: -1;">
+      <LiquidEther client:load
+        colors={[ '#60A5FA', '#34D399', '#7DD3FC' ]}
+        mouseForce={15}
+        cursorSize={100}
+        isViscous={false}
+        viscous={30}
+        iterationsViscous={32}
+        iterationsPoisson={32}
+        resolution={0.5}
+        isBounce={false}
+        autoDemo={true}
+        autoSpeed={0.5}
+        autoIntensity={2}
+        takeoverDuration={0.25}
+        autoResumeDelay={3000}
+        autoRampDuration={0.6}
+        style={{ width: '100%', height: '100%', opacity: 0.35, pointerEvents: 'auto'}}
+      />
+    </div>
+    <div class="container py-12">
+        <a href="/" class="back-link inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+            Back to Home
+        </a>
+        <article class="prose mt-8">
+            <h1 class="text-4xl font-bold tracking-tight">{project.title}</h1>
+            <p class="mt-4 text-lg text-muted-foreground">{project.description}</p>
+        </article>
+        <div class="links mt-8 flex gap-4">
+            {project.liveUrl && (
+                <Button as="a" href={project.liveUrl} target="_blank" rel="noopener noreferrer" variant="outline" className="inline-flex items-center gap-2">
+                    <ExternalLink className="h-4 w-4" />
+                    Live Demo
+                </Button>
+            )}
+            {project.githubUrl && (
+                <Button as="a" href={project.githubUrl} target="_blank" rel="noopener noreferrer" variant="outline" className="inline-flex items-center gap-2">
+                    <Github className="h-4 w-4" />
+                    Code
+                </Button>
+            )}
+        </div>
+    </div>
+</body>
+</html>

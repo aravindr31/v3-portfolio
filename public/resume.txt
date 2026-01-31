@@ -1,0 +1,69 @@
+﻿Aravind R
+​​Strategic technologist with 6 years of experience, specializing in the architecture and governance of scalable, highly-reliable enterprise platforms. Proven leader in driving reliability culture through data-driven SLO adoption and enabling engineering teams via Platform-as-a-Service (PaaS) principles. Deep expertise in observability design (Dynatrace, GCP), Infrastructure-as-Code (Terraform, Ansible), and AI/automation to define and execute resilient system strategy.
+
+
+Contact Details
+aravindr597@gmail.com | +918129883015 | aravindr.in | Github | Linked In
+
+
+
+
+Technical Skills
+* SRE/DevOps:  Dynatrace (MaaS & SaaS) , Kubernetes , Docker , OpenShift, Rancher , SLOs , Error Budget , Grafana , Kibana (ELK Stack), Adobe Analytics, Tekton, Jenkins, RUM, Argo CD
+* IAC & Automation:  Terraform , Ansible , Ansible Tower, Akamai API , Service Now API , n8n 
+* Cloud & Infrastructure:  Azure , GCP , Akamai , Linux (Debian, Cent OS, RHEL) 
+* Operating Systems:  Linux (Debian, Cent OS, RHEL), Windows
+* Programming:  Python , Go , Javascript , Bash Scripting , Next JS
+* AI/LLMs:  Microsoft Copilot Studio , Gemini , Claude Code 
+* Tools: JIRA , Service Now , Git, GitHub , Bit Bucket
+
+
+
+
+Relevant Experience
+Senior Site Reliability Engineer | Ford Motor Company 
+September 2024 - Present
+Strategic Initiatives
+* Architected Enterprise Cache Management Platform (IDP): Designed and developed a unified Next.js/OpenShift portal to centralize cache management for Akamai (Edge) and Redis (Backend).
+   * Impact: Consolidated disparate cache tools into a single pane of glass, streamlining 100+ daily requests via a self-service model.
+   * Governance: Enforced strict RBAC (Production vs. QA) and established full audit trails using GCP Logs.
+   * FinOps: Decommissioned legacy Jenkins infrastructure by engineering a custom internal scheduling engine, resulting in significant monthly cloud cost reductions.
+* Centralized SRE & Observability-as-Code: Leading the technical transition to a Central SRE model, scaling support to 250+ applications without increasing headcount.
+
+
+
+
+   * Automation: Developed modular Terraform libraries and GitOps workflows (ArgoCD) to auto-provision Dashboards, SLOs, and Alerts, reducing project onboarding time from days to minutes.
+* SRE AI Assistant & Automation: Engineered a GenAI assistant using Ford’s native LLM and Akamai/ServiceNow APIs to automate incident triage and root cause analysis.
+   * Impact: Reduced Mean Time To Resolution (MTTR) for critical incidents by 30% through automated log analysis.
+Core Responsibilities
+* Cloud-Native CI/CD (Tekton): Architected and managed modern Tekton pipelines on OpenShift to automate the deployment of SRE-led initiatives, ensuring high availability and seamless rollouts.
+* SLO & Error Budget Adoption: Spearheaded the adoption of SLOs and Error Budget policies across 4 Vehicle Commerce products, establishing a data-driven framework to balance feature velocity with system reliability.
+* Proactive Health Monitoring: Built custom Python web crawlers to detect broken URLs and assets proactively, significantly reducing client-side errors and improving user experience.
+* Unified Dashboarding: Developed a custom Next.js dashboard to provide development teams with a real-time, holistic view of application health and error budget consumption.
+Key technology and skills: GCP, Akamai, Ansible, Ansible Tower, Dynatrace, Docker, Tekton, Jenkins,Next JS, GitHub, Openshift, Terraform, SLOs, Error Budget, Grafana, Kibana, RUM
+
+
+Site Reliability Engineer | Cognizant
+January 2020 - September 2024
+* Orchestrated the deployment of robust monitoring, observability, and alerting solutions using Dynatrace, Kibana, and Service Now, managed consistently through Ansible.
+* Optimized content delivery and site performance by configuring and managing Akamai caching rules for high-traffic applications.
+* Collaborated with Platform Engineering to provide inputs for critical activities, including OS patching and JDK upgrades, ensuring long-term application stability.
+* Managed the full lifecycle of SSL certificates for Tomcat services using Venafi, maintaining security and compliance.
+* Provided expert application debugging and defect analysis, significantly reducing time-to-fix for complex issues. 
+* Key technology and skills: Azure, Akamai, Ansible, Ansible Tower, Dynatrace, ELK Stack, Docker, SQL, Go, Python, AEM, JIRA, Bit Bucket, Git, Rancher, Kubernetes, Citrix, Venafi
+
+
+
+
+Freelance Backend Engineer
+June 2019 - December 2019
+* Developed custom Ecommerce websites for local businesses using Node JS, React, and MongoDB.
+* Integrated and automated code analysis into the developer workflow and pipeline using tools like GitHub Actions.
+* Developed a full-scale chat application using Firebase and Next JS.
+Key technology and skills: Node JS, React, Strapi, Linux, Git, GitHub, GitHub Actions, GitLab, MongoDB, MySQL, SQLite
+
+
+Education
+APJ Abdul Kalam Technological University
+Bachelor of Technology in Electrical & Electronics Engineering ( 2015-2019 )

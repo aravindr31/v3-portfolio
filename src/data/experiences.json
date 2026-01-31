@@ -6,13 +6,15 @@
     "period": "September 2024 - Present",
     "location": "India",
     "highlights": [
-      "Currently piloting OpenTelemetry (OTel) for enhanced logging and distributed observability across microservices",
-      "Implementing Observability as Code (OaC) for Dynatrace SaaS platform using Terraform, standardizing monitoring deployment across teams",
-      "Own full reliability lifecycle for 4 Vehicle Commerce products as Product SRE, driving incident triage and APM-based debugging",
-      "Engineered AI assistant integrating ServiceNow APIs, Akamai Fast Purge API, and GCP logs, reducing MTTR by 30%",
-      "Spearheaded SLO and Error Budget adoption across all products, establishing data-driven framework for system reliability"
+      "Architected Enterprise Cache Management Platform (IDP): Designed and developed a unified Next.js/OpenShift portal to centralize cache management for Akamai (Edge) and Redis (Backend).",
+      "Centralized SRE & Observability-as-Code: Leading the technical transition to a Central SRE model, scaling support to 250+ applications without increasing headcount.",
+      "SRE AI Assistant & Automation: Engineered a GenAI assistant using Ford’s native LLM and Akamai/ServiceNow APIs to automate incident triage and root cause analysis.",
+      "Cloud-Native CI/CD (Tekton): Architected and managed modern Tekton pipelines on OpenShift to automate the deployment of SRE-led initiatives, ensuring high availability and seamless rollouts.",
+      "SLO & Error Budget Adoption: Spearheaded the adoption of SLOs and Error Budget policies across 4 Vehicle Commerce products, establishing a data-driven framework to balance feature velocity with system reliability.",
+      "Proactive Health Monitoring: Built custom Python web crawlers to detect broken URLs and assets proactively, significantly reducing client-side errors and improving user experience.",
+      "Unified Dashboarding: Developed a custom Next.js dashboard to provide development teams with a real-time, holistic view of application health and error budget consumption."
     ],
-    "technologies": ["GCP", "Akamai", "Ansible", "Dynatrace", "Docker", "Tekton", "Jenkins", "Next.js", "GitHub", "OpenShift", "Terraform", "SLOs", "Grafana", "Kibana", "OpenTelemetry"]
+    "technologies": ["GCP", "Akamai", "Ansible", "Ansible Tower", "Dynatrace", "Docker", "Tekton", "Jenkins", "Next JS", "GitHub", "Openshift", "Terraform", "SLOs", "Error Budget", "Grafana", "Kibana", "RUM"]
   },
   {
     "title": "Site Reliability Engineer",
@@ -21,27 +23,25 @@
     "period": "January 2020 - September 2024",
     "location": "India",
     "highlights": [
-      "Designed and developed solutions to improve application performance with industry standard practices",
-      "Orchestrated deployment of robust monitoring, observability, and alerting solutions using Dynatrace, Kibana & ServiceNow",
-      "Configured and managed Akamai caching rules to improve site performance",
-      "Developed end-to-end automation for Application Load Balancing and Edge Redirect Cloudlets using custom Ansible modules",
-      "Built comprehensive CICD pipelines with Sonarqube, OWASP security checks, and ServiceNow integration"
+        "Orchestrated the deployment of robust monitoring, observability, and alerting solutions using Dynatrace, Kibana, and Service Now, managed consistently through Ansible.",
+        "Optimized content delivery and site performance by configuring and managing Akamai caching rules for high-traffic applications.",
+        "Collaborated with Platform Engineering to provide inputs for critical activities, including OS patching and JDK upgrades, ensuring long-term application stability.",
+        "Managed the full lifecycle of SSL certificates for Tomcat services using Venafi, maintaining security and compliance.",
+        "Provided expert application debugging and defect analysis, significantly reducing time-to-fix for complex issues."
     ],
-    "technologies": ["Azure", "Akamai", "Ansible", "Dynatrace", "Docker", "Jenkins", "Kubernetes", "Terraform", "ServiceNow"]
+    "technologies": ["Azure", "Akamai", "Ansible", "Ansible Tower", "Dynatrace", "ELK Stack", "Docker", "SQL", "Go", "Python", "AEM", "JIRA", "Bit Bucket", "Git", "Rancher", "Kubernetes", "Citrix", "Venafi"]
   },
   {
-    "title": "Backend Developer",
+    "title": "Freelance Backend Engineer",
     "company": "Freelance",
     "companyUrl": "",
     "period": "June 2019 - December 2019",
     "location": "Remote",
     "highlights": [
-      "Developed custom ecommerce websites for local businesses using Node.js, React, and MongoDB",
-      "Integrated backend with headless CMS engine - Strapi for flexible content management",
-      "Built full-scale chat application using Firebase and Next.js",
-      "Integrated and automated code analysis into developer workflow and pipeline",
-      "Deployed scalable microservices architecture with automated CI/CD pipelines"
+      "Developed custom Ecommerce websites for local businesses using Node JS, React, and MongoDB.",
+      "Integrated and automated code analysis into the developer workflow and pipeline using tools like GitHub Actions.",
+      "Developed a full-scale chat application using Firebase and Next JS."
     ],
-    "technologies": ["Node.js", "Express.js", "MongoDB", "REST APIs", "JWT"]
+    "technologies": ["Node JS", "React", "Strapi", "Linux", "Git", "GitHub", "GitHub Actions", "GitLab", "MongoDB", "MySQL", "SQLite"]
   }
 ]

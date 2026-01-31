@@ -1,28 +1,58 @@
 [
   {
-    "title": "SRE AI Assistant",
-    "description": "Engineered an AI assistant integrating ServiceNow APIs, Akamai Fast Purge API, and GCP logs with Ford's native LLM, reducing incident resolution time by 30%. Built with Python and MS Copilot Studio.",
-    "githubUrl": ""
+    "title": "Enterprise Cache Management Platform (IDP)",
+    "slug": "enterprise-cache-management-platform",
+    "description": "Architected and developed a unified Next.js/OpenShift portal to centralize cache management for Akamai (Edge) and Redis (Backend). Consolidated disparate cache tools into a single pane of glass, streamlining 100+ daily requests via a self-service model.",
+    "githubUrl": "",
+    "highlight": true
   },
   {
-    "title": "Akamai Infrastructure Automation",
-    "description": "Developed end-to-end automation for Application Load Balancing and Edge Redirect Cloudlets using custom Ansible modules. Integrated with Ansible Tower for user-friendly management.",
-    "githubUrl": ""
+    "title": "SRE AI Assistant & Automation",
+    "slug": "sre-ai-assistant-automation",
+    "description": "Engineered a GenAI assistant using Ford’s native LLM and Akamai/ServiceNow APIs to automate incident triage and root cause analysis. Reduced Mean Time To Resolution (MTTR) for critical incidents by 30% through automated log analysis.",
+    "githubUrl": "",
+    "highlight": true
   },
   {
-    "title": "SRE CICD Pipeline",
-    "description": "Built comprehensive Jenkins & Tekton pipelines with Sonarqube, OWASP security checks, automated ServiceNow change management, and Kubernetes deployments.",
-    "githubUrl": ""
+    "title": "Centralized SRE & Observability-as-Code",
+    "slug": "centralized-sre-observability-as-code",
+    "description": "Leading the technical transition to a Central SRE model, scaling support to 250+ applications without increasing headcount. Developed modular Terraform libraries and GitOps workflows (ArgoCD) to auto-provision Dashboards, SLOs, and Alerts, reducing project onboarding time from days to minutes.",
+    "githubUrl": "",
+    "highlight": true
   },
   {
-    "title": "Personal Portfolio Website",
-    "description": "Modern, minimalist portfolio built with Astro and React featuring split-screen design, scroll spy navigation, interactive liquid background animations, and smooth section transitions. Inspired by Brittany Chiang's design philosophy.",
-    "githubUrl": "https://github.com/aravindr31/v3-portfolio"
+    "title": "Cloud-Native CI/CD (Tekton)",
+    "slug": "cloud-native-ci-cd-tekton",
+    "description": "Architected and managed modern Tekton pipelines on OpenShift to automate the deployment of SRE-led initiatives, ensuring high availability and seamless rollouts.",
+    "githubUrl": "",
+    "highlight": false
   },
   {
-  "title": "GitPulse - GitHub Stats Visualizer",
-  "description": "Full-stack GitHub analytics platform with embeddable SVG badges for profile READMEs. Built with React, TypeScript, Vite and deployed on Cloudflare Workers/Pages. Features achievement badges, developer ranking algorithm, contribution streaks, and CI/CD pipeline with GitHub Actions including automated testing, linting, and multi-environment deployments.",
-  "githubUrl": "https://github.com/aravindr31/git-pulse",
-  "liveUrl": "https://git-pulse.pages.dev"
-}
+    "title": "Proactive Health Monitoring",
+    "slug": "proactive-health-monitoring",
+    "description": "Built custom Python web crawlers to detect broken URLs and assets proactively, significantly reducing client-side errors and improving user experience.",
+    "githubUrl": "",
+    "highlight": false
+  },
+  {
+    "title": "Unified Dashboarding",
+    "slug": "unified-dashboarding",
+    "description": "Developed a custom Next.js dashboard to provide development teams with a real-time, holistic view of application health and error budget consumption.",
+    "githubUrl": "",
+    "highlight": false
+  },
+  {
+    "title": "Custom Ecommerce websites",
+    "slug": "custom-ecommerce-websites",
+    "description": "Developed custom Ecommerce websites for local businesses using Node JS, React, and MongoDB.",
+    "githubUrl": "",
+    "highlight": false
+  },
+  {
+    "title": "Chat application",
+    "slug": "chat-application",
+    "description": "Developed a full-scale chat application using Firebase and Next JS.",
+    "githubUrl": "",
+    "highlight": false
+  }
 ]

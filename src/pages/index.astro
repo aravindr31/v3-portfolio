@@ -9,6 +9,9 @@ import DecryptedText from '../components/ui/DecryptedText.jsx';
 import LiquidEther from '../components/ui/LiquidEther.jsx';
 import projectsData from '../data/projects.json';
 import ExperienceSection from '../components/ExperienceSection.jsx';
+
+const highlightedProjects = projectsData.filter(p => p.highlight);
+const otherProjects = projectsData.filter(p => !p.highlight);
 ---
 
 <html lang="en">
@@ -131,12 +134,28 @@ import ExperienceSection from '../components/ExperienceSection.jsx';
               <p class="text-muted-foreground text-sm sm:text-base">Selected enterprise and personal projects showcasing my expertise in SRE, automation, and full-stack development.</p>
             </div>
             <div class="grid grid-cols-1 gap-6 sm:gap-8 w-full">
-              {projectsData.map((project) => (
+              {highlightedProjects.map((project) => (
                 <ProjectCard 
                   client:visible
                   title={project.title}
                   description={project.description}
                   githubUrl={project.githubUrl}
+                  liveUrl={project.liveUrl}
+                  highlight={project.highlight}
+                  slug={project.slug}
+                />
+              ))}
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 w-full mt-8">
+              {otherProjects.map((project) => (
+                <ProjectCard 
+                  client:visible
+                  title={project.title}
+                  description={project.description}
+                  githubUrl={project.githubUrl}
+                  liveUrl={project.liveUrl}
+                  highlight={project.highlight}
+                  slug={project.slug}
                 />
               ))}
             </div>
@@ -156,7 +175,7 @@ import ExperienceSection from '../components/ExperienceSection.jsx';
           <p class="text-sm leading-loose text-muted-foreground">
             Built with <a href="https://astro.build" target="_blank" rel="noopener noreferrer" class="font-medium underline underline-offset-4">Astro</a> and 
             <a href="https://ui.shadcn.com" target="_blank" rel="noopener noreferrer" class="font-medium underline underline-offset-4">shadcn/ui</a>. 
-            {new Date().getFullYear()} © Aravind.
+            {new Date().getFullYear()} © Aravind R.
           </p>
         </footer>
       </main>
