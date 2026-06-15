@@ -1,20 +1,19 @@
 [
   {
-    "title": "Senior Site Reliability Engineer",
+    "title": "Site Reliability Engineer",
     "company": "Ford Motor Company",
     "companyUrl": "https://www.ford.com",
     "period": "September 2024 - Present",
     "location": "India",
     "highlights": [
-      "Architected Enterprise Cache Management Platform (IDP): Designed and developed a unified Next.js/OpenShift portal to centralize cache management for Akamai (Edge) and Redis (Backend).",
-      "Centralized SRE & Observability-as-Code: Leading the technical transition to a Central SRE model, scaling support to 250+ applications without increasing headcount.",
-      "SRE AI Assistant & Automation: Engineered a GenAI assistant using Ford’s native LLM and Akamai/ServiceNow APIs to automate incident triage and root cause analysis.",
-      "Cloud-Native CI/CD (Tekton): Architected and managed modern Tekton pipelines on OpenShift to automate the deployment of SRE-led initiatives, ensuring high availability and seamless rollouts.",
-      "SLO & Error Budget Adoption: Spearheaded the adoption of SLOs and Error Budget policies across 4 Vehicle Commerce products, establishing a data-driven framework to balance feature velocity with system reliability.",
-      "Proactive Health Monitoring: Built custom Python web crawlers to detect broken URLs and assets proactively, significantly reducing client-side errors and improving user experience.",
-      "Unified Dashboarding: Developed a custom Next.js dashboard to provide development teams with a real-time, holistic view of application health and error budget consumption."
+      "Engineered a Terraform provisioning module scaling Dynatrace observability to 250+ applications, reducing onboarding from days to under 30 minutes; built end-to-end Tekton PAC pipelines enabling GitOps-native infra delivery.",
+      "Led FinOps-motivated migration of Vehicle Commerce observability from Dynatrace to a fully open-source stack — Grafana Alloy (OTel collector), Beyla (eBPF auto-instrumentation), Tempo, Mimir, Loki, Pyroscope, and Faro with Cilium/Hubble for network visibility — successfully piloted across eCommerce stack applications.",
+      "Sole-engineered an Enterprise Cache Management IDP (Next.js + OpenShift) consolidating Akamai and Redis operations into a self-service platform with RBAC, audit trails, and CI/CD via GitHub Actions — eliminating 100+ daily manual requests.",
+      "Drove SLO and Error Budget adoption across 5 Vehicle Commerce products, establishing a data-driven reliability framework balancing feature velocity with uptime commitments.",
+      "Contributed to a GenAI-powered incident assistant integrating Ford's native LLM with Akamai and ServiceNow APIs, reducing P1 MTTR by 30%.",
+      "Built Python web crawlers for proactive broken URL and asset detection, reducing client-side error rates across Vehicle Commerce properties."
     ],
-    "technologies": ["GCP", "Akamai", "Ansible", "Ansible Tower", "Dynatrace", "Docker", "Tekton", "Jenkins", "Next JS", "GitHub", "Openshift", "Terraform", "SLOs", "Error Budget", "Grafana", "Kibana", "RUM"]
+    "technologies": ["GCP", "Kubernetes", "OpenShift", "Dynatrace", "Grafana", "Grafana Alloy", "Beyla", "Tempo", "Mimir", "Loki", "Pyroscope", "Faro", "Cilium", "Hubble", "OpenTelemetry", "Terraform", "Tekton", "Argo CD", "Next.js", "Akamai", "SLOs", "Error Budget", "RUM", "GitHub Actions"]
   },
   {
     "title": "Site Reliability Engineer",
@@ -23,13 +22,14 @@
     "period": "January 2020 - September 2024",
     "location": "India",
     "highlights": [
-        "Orchestrated the deployment of robust monitoring, observability, and alerting solutions using Dynatrace, Kibana, and Service Now, managed consistently through Ansible.",
-        "Optimized content delivery and site performance by configuring and managing Akamai caching rules for high-traffic applications.",
-        "Collaborated with Platform Engineering to provide inputs for critical activities, including OS patching and JDK upgrades, ensuring long-term application stability.",
-        "Managed the full lifecycle of SSL certificates for Tomcat services using Venafi, maintaining security and compliance.",
-        "Provided expert application debugging and defect analysis, significantly reducing time-to-fix for complex issues."
+      "Embedded SRE for QVC — a high-traffic live commerce platform operating across 5 international markets; served as primary Dynatrace power user across the account.",
+      "Built custom metric ingestion pipelines via the Dynatrace API (Python) to surface business-layer signals — order funnel and commerce events — alongside infrastructure metrics, bridging system health with product outcomes.",
+      "Designed and maintained Dynatrace dashboards, SLOs, and anomaly detection configs tuned for live broadcast traffic spikes across QVC's 5-market estate.",
+      "Configured and optimised Akamai CDN caching rules for peak broadcast events, maintaining performance and availability under high viewer-to-buyer conversion pressure.",
+      "Led application debugging and defect analysis across the AEM stack, reducing time-to-fix for production issues and maintaining SLA compliance across all 5 markets.",
+      "Managed SSL certificate lifecycle for Tomcat services via Venafi; collaborated on OS patching, JDK upgrades, and infrastructure hardening across 21 AEM servers."
     ],
-    "technologies": ["Azure", "Akamai", "Ansible", "Ansible Tower", "Dynatrace", "ELK Stack", "Docker", "SQL", "Go", "Python", "AEM", "JIRA", "Bit Bucket", "Git", "Rancher", "Kubernetes", "Citrix", "Venafi"]
+    "technologies": ["Dynatrace", "Ansible", "Azure", "Akamai", "ELK Stack", "Docker", "Kubernetes", "Rancher", "AEM", "Python", "Go", "Venafi", "Citrix"]
   },
   {
     "title": "Freelance Backend Engineer",
@@ -38,10 +38,9 @@
     "period": "June 2019 - December 2019",
     "location": "Remote",
     "highlights": [
-      "Developed custom Ecommerce websites for local businesses using Node JS, React, and MongoDB.",
-      "Integrated and automated code analysis into the developer workflow and pipeline using tools like GitHub Actions.",
-      "Developed a full-scale chat application using Firebase and Next JS."
+      "Built full-stack ecommerce sites for local businesses using Node.js, React, and MongoDB with integrated CI/CD via GitHub Actions.",
+      "Developed a real-time chat application using Firebase and Next.js."
     ],
-    "technologies": ["Node JS", "React", "Strapi", "Linux", "Git", "GitHub", "GitHub Actions", "GitLab", "MongoDB", "MySQL", "SQLite"]
+    "technologies": ["Node.js", "React", "MongoDB", "Firebase", "Next.js", "GitHub Actions", "Git"]
   }
 ]
