@@ -25,7 +25,7 @@
 ## 🛠️ Tech Stack
 
 | Category | Technologies |
-|----------|-------------|
+|----------|--------------|
 | **Framework** | [Astro](https://astro.build) v3 |
 | **UI Library** | [React](https://react.dev) 18 |
 | **Styling** | [Tailwind CSS](https://tailwindcss.com) v3 |

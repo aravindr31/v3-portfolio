@@ -9,7 +9,8 @@ export default function ExperienceSection() {
   return (
     <div className="space-y-12">
       <div>
-        <h2 className="text-3xl font-bold tracking-tight text-left">Experience</h2>
+        <p className="font-mono text-xs tracking-[0.25em] uppercase text-primary mb-3">#02 ——</p>
+        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight uppercase text-left">Experience</h2>
       </div>
       
       <div className="space-y-12">
@@ -26,7 +27,7 @@ export default function ExperienceSection() {
               href={exp.companyUrl || "#experience"} 
               target={exp.companyUrl ? "_blank" : "_self"}
               rel={exp.companyUrl ? "noopener noreferrer" : undefined}
-              className="block p-4 sm:p-6 rounded-lg hover:bg-accent/50 hover:shadow-lg transition-all duration-300 -mx-4 sm:-mx-6"
+              className="block p-4 sm:p-6 border border-border hover:border-primary/40 hover:bg-accent/30 transition-all duration-300 -mx-4 sm:-mx-6"
             >
               <div className="flex flex-col gap-2 mb-4">
                 <div className="flex items-start justify-between gap-2">
@@ -56,7 +57,7 @@ export default function ExperienceSection() {
               <ul className="space-y-2 mb-4">
                 {exp.highlights.map((highlight, i) => (
                   <li key={i} className="flex gap-3 text-sm text-muted-foreground">
-                    <span className="text-teal-500 flex-shrink-0 leading-none mt-1">→</span>
+                    <span className="text-primary flex-shrink-0 leading-none mt-1">→</span>
                     <span className="flex-1">{highlight}</span>
                   </li>
                 ))}
@@ -66,7 +67,7 @@ export default function ExperienceSection() {
                 {exp.technologies.map((tech, i) => (
                   <span 
                     key={i}
-                    className="px-2.5 py-1 text-xs font-medium rounded-full bg-teal-500/10 text-teal-600 dark:text-teal-400"
+                    className="px-2 py-0.5 text-xs font-mono tracking-wide border border-primary/30 text-primary/80 dark:text-primary/80"
                   >
                     {tech}
                   </span>

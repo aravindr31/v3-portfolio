@@ -31,7 +31,7 @@ const otherProjects = projectsData.filter(p => !p.highlight);
   <body class="min-h-screen bg-background text-foreground font-sans antialiased">
     <div style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: -1;">
       <LiquidEther client:load
-        colors={[ '#60A5FA', '#34D399', '#7DD3FC' ]}
+        colors={[ '#4D87FF', '#6B8EFF', '#1A63F4' ]}
         mouseForce={15}
         cursorSize={100}
         isViscous={false}
@@ -46,7 +46,7 @@ const otherProjects = projectsData.filter(p => !p.highlight);
         takeoverDuration={0.25}
         autoResumeDelay={3000}
         autoRampDuration={0.6}
-        style={{ width: '100%', height: '100%', opacity: 0.35, pointerEvents: 'auto'}}
+        style={{ width: '100%', height: '100%', opacity: 0.25, pointerEvents: 'auto'}}
       />
     </div>
 
@@ -56,7 +56,7 @@ const otherProjects = projectsData.filter(p => !p.highlight);
         <Header client:load />
         
         <div class="space-y-4 sm:space-y-6 max-w-lg">
-          <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl lg:text-6xl leading-tight">
+          <h1 class="font-display text-7xl sm:text-8xl lg:text-9xl leading-none tracking-tight uppercase">
             <DecryptedText client:load
               text="Aravind R"
               animateOn="view"
@@ -66,11 +66,11 @@ const otherProjects = projectsData.filter(p => !p.highlight);
             />
           </h1>
 
-          <h2 class="text-xl sm:text-2xl lg:text-2xl font-semibold text-zinc-600 dark:text-zinc-300">
+          <h2 class="font-mono text-sm sm:text-base tracking-[0.2em] uppercase text-primary">
             Site Reliability Engineer
           </h2>
           
-          <p class="text-base sm:text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-md">
+          <p class="text-sm sm:text-base text-muted-foreground leading-relaxed max-w-md">
             Specializing in observability, automation, and building resilient enterprise-scale systems at Ford Motor Company.
           </p>
 
@@ -78,20 +78,20 @@ const otherProjects = projectsData.filter(p => !p.highlight);
           <nav class="hidden lg:block pt-8" id="main-nav">
             <ul class="space-y-4">
               <li>
-                <a href="#about" class="nav-link group flex items-center gap-3 text-sm font-semibold text-zinc-600 dark:text-zinc-300 hover:text-foreground transition-colors" data-section="about">
-                  <span class="nav-line h-[0.5px] w-8 bg-zinc-600 dark:bg-zinc-400 group-hover:w-16 group-hover:bg-foreground transition-all"></span>
+                <a href="#about" class="nav-link group flex items-center gap-3 font-mono text-xs tracking-[0.25em] text-muted-foreground hover:text-primary transition-all duration-300" data-section="about">
+                  <span class="nav-line h-[0.5px] w-6 bg-muted-foreground group-hover:w-14 group-hover:bg-primary transition-all duration-300"></span>
                   ABOUT
                 </a>
               </li>
               <li>
-                <a href="#experience" class="nav-link group flex items-center gap-3 text-sm font-semibold text-zinc-600 dark:text-zinc-300 hover:text-foreground transition-colors" data-section="experience">
-                  <span class="nav-line h-[0.5px] w-8 bg-zinc-600 dark:bg-zinc-400 group-hover:w-16 group-hover:bg-foreground transition-all"></span>
+                <a href="#experience" class="nav-link group flex items-center gap-3 font-mono text-xs tracking-[0.25em] text-muted-foreground hover:text-primary transition-all duration-300" data-section="experience">
+                  <span class="nav-line h-[0.5px] w-6 bg-muted-foreground group-hover:w-14 group-hover:bg-primary transition-all duration-300"></span>
                   EXPERIENCE
                 </a>
               </li>
               <li>
-                <a href="#projects" class="nav-link group flex items-center gap-3 text-sm font-semibold text-zinc-600 dark:text-zinc-300 hover:text-foreground transition-colors" data-section="projects">
-                  <span class="nav-line h-[0.5px] w-8 bg-zinc-600 dark:bg-zinc-400 group-hover:w-16 group-hover:bg-foreground transition-all"></span>
+                <a href="#projects" class="nav-link group flex items-center gap-3 font-mono text-xs tracking-[0.25em] text-muted-foreground hover:text-primary transition-all duration-300" data-section="projects">
+                  <span class="nav-line h-[0.5px] w-6 bg-muted-foreground group-hover:w-14 group-hover:bg-primary transition-all duration-300"></span>
                   PROJECTS
                 </a>
               </li>
@@ -100,13 +100,13 @@ const otherProjects = projectsData.filter(p => !p.highlight);
 
           <!-- Social Links -->
           <div class="hidden lg:flex gap-6 pt-8">
-            <a href="mailto:aravindr597@gmail.com" class="text-zinc-600 dark:text-zinc-400 hover:text-foreground transition-colors" aria-label="Email">
+            <a href="mailto:aravindr597@gmail.com" class="text-muted-foreground hover:text-primary transition-colors" aria-label="Email">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
             </a>
-            <a href="https://github.com/aravindr31" target="_blank" rel="noopener noreferrer" class="text-zinc-600 dark:text-zinc-400 hover:text-foreground transition-colors" aria-label="GitHub">
+            <a href="https://github.com/aravindr31" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
             </a>
-            <a href="https://www.linkedin.com/in/aravindr597/" target="_blank" rel="noopener noreferrer" class="text-zinc-600 dark:text-zinc-400 hover:text-foreground transition-colors" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/aravindr597/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
             </a>
           </div>
@@ -127,7 +127,8 @@ const otherProjects = projectsData.filter(p => !p.highlight);
         <section id="projects" class="mb-16 sm:mb-24 scroll-mt-16 lg:mb-36 lg:scroll-mt-24">
           <div class="space-y-6 sm:space-y-8 w-full">
             <div class="space-y-3 sm:space-y-4">
-              <h2 class="text-2xl sm:text-3xl font-bold tracking-tighter">Featured Projects</h2>
+              <p class="font-mono text-xs tracking-[0.25em] uppercase text-primary">#04 ——</p>
+              <h2 class="text-3xl sm:text-4xl font-bold tracking-tight uppercase">Featured Projects</h2>
               <p class="text-muted-foreground text-sm sm:text-base">Selected enterprise and personal projects showcasing my expertise in SRE, automation, and full-stack development.</p>
             </div>
             <div class="grid grid-cols-1 gap-6 sm:gap-8 w-full">
@@ -219,18 +220,18 @@ const otherProjects = projectsData.filter(p => !p.highlight);
               const line = link.querySelector('.nav-line');
               
               if (linkSection === currentSection) {
-                link.classList.add('text-teal-500');
-                link.classList.remove('text-zinc-600', 'dark:text-zinc-400');
+                link.classList.add('text-white', 'font-bold', 'text-sm', '!tracking-[0.3em]');
+                link.classList.remove('text-muted-foreground', 'text-xs');
                 if (line) {
-                  line.classList.add('w-16', 'bg-teal-500');
-                  line.classList.remove('w-8', 'bg-zinc-600', 'dark:bg-zinc-400');
+                  line.classList.add('w-14', '!bg-white');
+                  line.classList.remove('w-6');
                 }
               } else {
-                link.classList.remove('text-teal-500');
-                link.classList.add('text-zinc-600', 'dark:text-zinc-400');
+                link.classList.remove('text-white', 'font-bold', 'text-sm', '!tracking-[0.3em]');
+                link.classList.add('text-muted-foreground', 'text-xs');
                 if (line) {
-                  line.classList.remove('w-16', 'bg-teal-500');
-                  line.classList.add('w-8', 'bg-zinc-600', 'dark:bg-zinc-400');
+                  line.classList.remove('w-14', '!bg-white');
+                  line.classList.add('w-6');
                 }
               }
             });
