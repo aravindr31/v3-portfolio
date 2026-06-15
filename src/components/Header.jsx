@@ -36,7 +36,7 @@ export default function Header() {
         <div className="container flex h-14 items-center">
           <div className="mr-4 flex">
             <a href="/" className="flex items-center space-x-2">
-              <span className="font-bold text-xl">AR</span>
+              <span className="font-display text-2xl tracking-wider">AR</span>
             </a>
           </div>
 
@@ -73,28 +73,28 @@ export default function Header() {
             <nav className="container flex flex-col space-y-4 py-4">
               <a 
                 href="#about" 
-                className="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 py-2"
+                className="font-mono text-xs tracking-[0.2em] uppercase transition-colors hover:text-primary text-muted-foreground py-2"
                 onClick={closeMenu}
               >
                 About
               </a>
               <a 
                 href="#experience" 
-                className="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 py-2"
+                className="font-mono text-xs tracking-[0.2em] uppercase transition-colors hover:text-primary text-muted-foreground py-2"
                 onClick={closeMenu}
               >
                 Experience
               </a>
               <a 
                 href="#projects" 
-                className="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 py-2"
+                className="font-mono text-xs tracking-[0.2em] uppercase transition-colors hover:text-primary text-muted-foreground py-2"
                 onClick={closeMenu}
               >
                 Projects
               </a>
               <a 
                 href="#contact" 
-                className="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 py-2"
+                className="font-mono text-xs tracking-[0.2em] uppercase transition-colors hover:text-primary text-muted-foreground py-2"
                 onClick={closeMenu}
               >
                 Contact
