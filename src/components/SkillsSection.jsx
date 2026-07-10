@@ -16,7 +16,7 @@ export default function SkillsSection() {
   return (
     <div className="space-y-8">
       <div>
-        <p className="font-mono text-xs tracking-[0.25em] uppercase text-primary mb-3">#03 ——</p>
+        <p className="font-mono text-xs tracking-[0.25em] uppercase text-primary mb-3">#04 ——</p>
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight uppercase text-left">Skills</h2>
       </div>
       <div className="flex flex-wrap gap-2">

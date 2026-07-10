@@ -1,17 +1,14 @@
 ---
 import '../styles.css';
 import Header from "../components/Header.jsx";
-import ProjectCard from "../components/ProjectCard.jsx";
 import AboutSection from "../components/AboutSection.jsx";
 import ContactSection from "../components/ContactSection.jsx";
 import SkillsSection from '../components/SkillsSection.jsx';
 import DecryptedText from '../components/ui/DecryptedText.jsx';
 import LiquidEther from '../components/ui/LiquidEther.jsx';
-import projectsData from '../data/projects.json';
 import ExperienceSection from '../components/ExperienceSection.jsx';
+import BlogSection from '../components/BlogSection';
 
-const highlightedProjects = projectsData.filter(p => p.highlight);
-const otherProjects = projectsData.filter(p => !p.highlight);
 ---
 
 <html lang="en">
@@ -89,10 +86,16 @@ const otherProjects = projectsData.filter(p => !p.highlight);
                   EXPERIENCE
                 </a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="#projects" class="nav-link group flex items-center gap-3 font-mono text-xs tracking-[0.25em] text-muted-foreground hover:text-primary transition-all duration-300" data-section="projects">
                   <span class="nav-line h-[0.5px] w-6 bg-muted-foreground group-hover:w-14 group-hover:bg-primary transition-all duration-300"></span>
                   PROJECTS
+                </a>
+              </li> -->
+              <li>
+                <a href="#blog" class="nav-link group flex items-center gap-3 font-mono text-xs tracking-[0.25em] text-muted-foreground hover:text-primary transition-all duration-300" data-section="blog">
+                  <span class="nav-line h-[0.5px] w-6 bg-muted-foreground group-hover:w-14 group-hover:bg-primary transition-all duration-300"></span>
+                  BLOG
                 </a>
               </li>
             </ul>
@@ -109,6 +112,9 @@ const otherProjects = projectsData.filter(p => !p.highlight);
             <a href="https://www.linkedin.com/in/aravindr597/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
             </a>
+            <a href="https://o11y-lab.hashnode.dev/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-primary transition-colors" aria-label="Hashnode">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 39 39" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M2.68 13.032c-3.573 3.505-3.573 9.363 0 12.936L13.032 36.32c3.505 3.573 9.363 3.573 12.936 0L36.32 25.968c3.573-3.573 3.573-9.431 0-12.936L25.968 2.68c-3.573-3.573-9.431-3.573-12.936 0zm12.211 1.935c2.507-2.521 6.582-2.544 9.104-.038s2.544 6.582.038 9.104-6.582 2.544-9.104.038-2.544-6.582-.038-9.104"/></svg>
+            </a>
           </div>
         </div>
       </div>
@@ -124,7 +130,7 @@ const otherProjects = projectsData.filter(p => !p.highlight);
           <ExperienceSection client:visible />
         </section>
 
-        <section id="projects" class="mb-16 sm:mb-24 scroll-mt-16 lg:mb-36 lg:scroll-mt-24">
+        <!-- <section id="projects" class="mb-16 sm:mb-24 scroll-mt-16 lg:mb-36 lg:scroll-mt-24">
           <div class="space-y-6 sm:space-y-8 w-full">
             <div class="space-y-3 sm:space-y-4">
               <p class="font-mono text-xs tracking-[0.25em] uppercase text-primary">#04 ——</p>
@@ -158,8 +164,46 @@ const otherProjects = projectsData.filter(p => !p.highlight);
               ))}
             </div>
           </div>
-        </section>
+        </section> -->
 
+        <section id="blog" class="mb-16 sm:mb-24 scroll-mt-16 lg:mb-36 lg:scroll-mt-24">
+          <BlogSection client:visible />
+          <!-- <div class="space-y-6 sm:space-y-8 w-full">
+            <div class="space-y-3 sm:space-y-4">
+              <p class="font-mono text-xs tracking-[0.25em] uppercase text-primary">#03 ——</p>
+              <h2 class="text-3xl sm:text-4xl font-bold tracking-tight uppercase">Blogs</h2>
+              <p class="text-muted-foreground text-sm sm:text-base">Random Thoughts on observability, SRE, and open-source infrastructure from my Hashnode blog.</p>
+            </div>
+            <div class="flex flex-col divide-y divide-border">
+              {posts.length > 0 ? (
+                posts.slice(0, 4).map((post) => (
+                  <BlogCard
+                    title={post.title}
+                    excerpt={post.excerpt}
+                    url={post.url}
+                    pubDate={post.pubDate}
+                    categories={post.categories}
+                    coverImage={post.coverImage}
+                  />
+                ))
+              ) : (
+                <p class="text-muted-foreground text-sm py-8 text-center">
+                  No posts yet. Check back soon!
+                </p>
+              )}
+            </div>
+            <div class="pt-4">
+              <a
+                href="https://o11y-lab.hashnode.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="font-mono text-xs tracking-[0.25em] uppercase text-primary hover:text-primary/80 transition-colors inline-flex items-center gap-2"
+              >
+                View all posts on Hashnode →
+              </a>
+            </div>
+          </div> -->
+        </section>
 
         <section id="skills" class="mb-16 sm:mb-24 scroll-mt-16 lg:mb-36 lg:scroll-mt-24">
           <SkillsSection client:visible />

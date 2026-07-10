@@ -86,11 +86,11 @@ export default function Header() {
                 Experience
               </a>
               <a 
-                href="#projects" 
+                href="#blog" 
                 className="font-mono text-xs tracking-[0.2em] uppercase transition-colors hover:text-primary text-muted-foreground py-2"
                 onClick={closeMenu}
               >
-                Projects
+                Blogs
               </a>
               <a 
                 href="#contact" 

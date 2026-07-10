@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Observability Without the Invoice: An SRE's Open Source APM Experiment",
+    "excerpt": "Built a full open-source observability stack — Grafana Alloy, Beyla, Tempo, Mimir, Loki, Pyroscope, Faro, and Cilium/Hubble — as an alternative to Dynatrace/Datadog. Covers what it replaces, where it falls short, and the operational trade-offs.",
+    "url": "https://o11y-lab.hashnode.dev/observability-without-the-invoice",
+    "pubDate": "2026-07-10",
+    "categories": ["Otel", "Grafana", "SRE", "Observability"],
+    "coverImage": ""
+  }
+]
